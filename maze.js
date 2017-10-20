@@ -27,8 +27,7 @@ window.onload = function ()
 						allbounTochangered[h].setAttribute("class","boundary youlose");
 					}
 						m++;
-						document.getElementById("status").innerHTML = "You Lose. Better Luck next Time.";
-				};
+				};	
 			}	
 			
 			//Exercise 3: Alerts on successful completion of maze
