@@ -17,8 +17,6 @@ window.onload = function ()
 		//Exercise 2: All boundaries glow red on hover
 		
 		var allbounTochangered = document.querySelectorAll(".boundary");
-	//	var e = 0;
-	//	var h = 0;
 		var m = 0;
 			for (var e = 0; e < allbounTochangered.length; e++)
 			{
@@ -41,8 +39,7 @@ window.onload = function ()
 			if (m == 0)
 			{
 				window.alert("You Win");
-				document.getElementById("status").innerHTML = "Congratulations!! You Win";
+				
 			}
 		};
-		
 	}
