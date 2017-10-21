@@ -41,4 +41,17 @@ window.onload = function ()
 				
 			}
 		};
+		
+	//Exercise 4: Restartable Maze
+		
+		var restart = document.getElementById("start");
+		restart.onclick = function()
+		{
+		document.getElementById("status");
+			for ( var h = 0; h < allbounTochangered.length-1;h++)
+			{
+				allbounTochangered[h].setAttribute("class","boundary boundary");
+			}
+		
+		};
 	}
