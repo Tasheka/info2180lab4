@@ -14,6 +14,7 @@ window.onload = function ()
 			this.setAttribute("outcome", "youlose");
 		};
 		
+		
 		//Exercise 2: All boundaries glow red on hover
 		
 		var allbounTochangered = document.querySelectorAll(".boundary");
@@ -25,6 +26,7 @@ window.onload = function ()
 					for (var h = 0; h< allbounTochangered.length-1;h++)
 					{
 						allbounTochangered[h].setAttribute("class","boundary youlose");
+						document.getElementById("status").innerHTML = "You Lose. Better Luck Next Time.";
 					}
 						m++;
 				};	
@@ -37,21 +39,23 @@ window.onload = function ()
 		{
 			if (m == 0)
 			{
-				window.alert("You Win");
-				
+				document.getElementById("status").innerHTML = "Congratulations!! You Win";
 			}
 		};
 		
-	//Exercise 4: Restartable Maze
+	//Exercise 4: Restartable Maze 
 		
 		var restart = document.getElementById("start");
 		restart.onclick = function()
 		{
-		document.getElementById("status");
+		document.getElementById("status").innerHTML = "Move your mouse over the \"S\" to begin.";
 			for ( var h = 0; h < allbounTochangered.length-1;h++)
 			{
 				allbounTochangered[h].setAttribute("class","boundary boundary");
+				m = 0;
 			}
+	
+
 		
 		};
-	}
+		}
