@@ -48,14 +48,28 @@ window.onload = function ()
 		var restart = document.getElementById("start");
 		restart.onclick = function()
 		{
-		document.getElementById("status").innerHTML = "Move your mouse over the \"S\" to begin.";
+		document.getElementById("status").innerHTML = "Click the \"S\" to begin.";
 			for ( var h = 0; h < allbounTochangered.length-1;h++)
 			{
 				allbounTochangered[h].setAttribute("class","boundary boundary");
 				m = 0;
 			}
-	
-
+			
+		var cheat = document.getElementById("maze");
+				cheat.onmouseleave = function()
+				{
+		{
+		//	cheat.setAttribute("thatswhathappens", "maze youlose");
+			//document.getElementById("status").innerHTML = "Cheater!! You Lose. Better Luck Next Time.";
+			for ( var h = 0; h < allbounTochangered.length-1;h++)
+			{
+				allbounTochangered[h].setAttribute("class", "boundary youlose");
+				document.getElementById("status").innerHTML = "Cheater!! You Lose. Better Luck Next Time.";
+			}
+		
+		}
 		
 		};
-		}
+		
+		};
+	}
